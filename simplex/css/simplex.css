@@ -1,0 +1,38 @@
+.content form{
+	
+}
+.content input{
+	border:1px solid #999;
+	padding:3px 5px 3px 5px;
+	text-align:center;
+}
+.content select{
+	border:1px solid #999;
+	text-align:center;
+}
+.content sub{
+	font-size:8px;
+}
+.content .submit{
+	text-align:right;
+}
+.content .des{
+	text-align:right;
+}
+.content .part{
+	margin:2px;
+	padding:5px;
+	border:1px solid #999;	
+}
+.content #iteraciones input{
+	padding:0px;
+}
+.content #iteraciones thead th{
+	border:1px solid #999;
+	width:35px;
+	text-align:center;
+}
+.content #iteraciones tbody td{
+	border:1px solid #999;
+	text-align:center;
+}
