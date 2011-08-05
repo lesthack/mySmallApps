@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<item>
+	<position><in>04</in></position>
+	<position><in>10</in></position>
+	<position><in>23</in></position>
+	<position><in>35</in></position>
+	<position><in>42</in></position>
+	<position><in>61</in></position>
+	<position><in>77</in></position>
+	<position><out>77</out></position>
+	<position><out>61</out></position>
+	<position><in>66</in></position>
+	<position><out>66</out></position>
+	<position><in>77</in></position>
+	<position><out>77</out></position>
+	<position><out>42</out></position>
+	<position><in>47</in></position>
+	<position><in>51</in></position>
+	<position><in>66</in></position>
+	<position><in>72</in></position>
+</item>
+
