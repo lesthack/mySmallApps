@@ -1,0 +1,4 @@
+
+	Para ejecutar el programa escrito con tecnologias HTML, javascript (DOm), CSS, 
+	solo debe abrir con doble click index.htm.
+	Preferentemente con firefox. 

@@ -1,0 +1,177 @@
+<html xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Code :: Inocorp</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<link type="text/css" href="estilos.css" rel=stylesheet>
+	<script src="utils.js" type="text/javascript"></script>
+	<script src="evaluator.js" type="text/javascript"></script>
+	<script src="methods.js" type="text/javascript"></script>
+	<script src="prototype.js" type="text/javascript"></script>
+	<script src="control.tabs.2.0.1.js" type="text/javascript"></script>
+</head>
+<body>
+	<div id="root">
+		<h1>.;:Metodos<b>Numericos:;.</b></h1>
+		<div id="menu">
+			<ul id="opmenu">
+				<li><a href="#biseccion">Biseccion</a></li>
+				<li><a href="#falsi">Regla Falsa</a></li>
+				<li><a href="#sintaxis">Sintaxis</a></li>
+			</ul>
+		</div>
+		<div id="biseccion" class="tab">
+			<h1 style="color:rgb(128,128,0);">metodo de la biseccion</h1>
+			<form class="formulario">
+				<table>
+					<thead>
+						<tr>
+							<td align="center">Funcion</td>
+							<td align="center">x<sub>i</sub></td>
+							<td align="center">x<sub>u</sub></td>
+							<td align="center">n</td>
+							<td align="center"></td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<label for="funcion">
+									<b>f(x)=</b>
+								</label>
+								<input type="text" value="3*(x+1)*(x-1/2)*(x-1)" name="bifuncion" id="bifuncion" size="30" title="Escriba la funcion">
+							</td>
+							<td>
+								<input type="text" value="-2" name="bixi" id="bixi" size="10" title="Valor para xi">
+							</td>
+							<td>
+								<input type="text" value="1.5" name="bixu" id="bixu" size="10" title="Valor para xu">
+							</td>
+							<td>
+								<input type="text" value="3" name="bin" id="bin" size="10" title="Numero de iteracciones">
+							</td>
+							<td>
+								<input type="button" onclick="biseccion(bifuncion.value,bixi.value,bixu.value,bin.value);" value="Calcular" name="submit" class="button">
+							</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</form>
+			<div class="request" align="center">
+				<table cellpadding="10" id="biseccion_table" name="biseccion_table">	
+					<thead>
+						<tr>
+							<th>Iteracion</th>
+							<th>x<sub>i</sub</th>
+							<th>x<sub>u</sub></th>
+							<th>f(x<sub>i</sub>)</th>
+							<th>f(x<sub>u</sub>)</th>
+							<th>x<sub>r</sub></th>
+							<th>f(x<sub>r</sub>)</th>
+							<th>Error</th>
+						</tr>
+					</thead>
+				</table>
+			</div>
+		</div>
+		<div id="falsi" class="tab">
+			<h1 style="color:rgb(70,130,180);">metodo de la regla falsa</h1>
+			<form class="formulario">
+				<table>
+					<thead>
+						<tr>
+							<td align="center">Funcion</td>
+							<td align="center">x<sub>i</sub></td>
+							<td align="center">x<sub>u</sub></td>
+							<td align="center">n</td>
+							<td align="center"></td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<label for="funcion">
+									<b>f(x)=</b>
+								</label>
+								<input type="text" value="(1-0.6*x)/x" name="falsifuncion" id="falsifuncion" size="30">
+							</td>
+							<td>
+								<input type="text" value="1.5" name="falsixi" id="falsixi" size="10">
+							</td>
+							<td>
+								<input type="text" value="2" name="falsixu" id="falsixu" size="10">
+							</td>
+							<td>
+								<input type="text" value="3" name="falsin" id="falsin" size="10" title="Numero de iteracciones">
+							</td>
+
+							<td>
+								<input type="button" onclick="falsi(falsifuncion.value,falsixi.value,falsixu.value,falsin.value);" value="Calcular" name="submit" class="button">
+							</td>
+						</tr>
+						<tr>
+							<td>
+							</td>
+							<td>
+								
+							</td>
+							<td>
+								
+							</td>
+							<td>
+								
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</form>
+			<div class="request" align="center">
+				<table cellpadding="10" id="falsi_table" name="falsi_table">	
+					<thead>
+						<tr>
+							<th>Iteracion</th>
+							<th>x<sub>i</sub</th>
+							<th>x<sub>u</sub></th>
+							<th>f(x<sub>i</sub>)</th>
+							<th>f(x<sub>u</sub>)</th>
+							<th>x<sub>r</sub></th>
+							<th>f(x<sub>r</sub>)</th>
+							<th>Error</th>
+						</tr>
+					</thead>
+				</table>
+			</div>
+		</div>
+		<div id="sintaxis" class="tab">
+			<h1 style="color:rgb(47,79,79);">Sobre la sintaxis de las expresiones</h1>
+			<ul>
+				<li>
+					<div class="texto">
+					El metodo empleado para la evaluacion de expresiones se basa en 
+					el <a href="http://en.wikipedia.org/wiki/Reverse_Polish_notation">RPN(Reverse Polish notation)</a> 
+					y sin embargo no cuenta con un analizador lexicografico para el reconocimiento
+					de expresiones. Es por eso que se confia en que el usuario ingrese 
+					correctamente la expresion para evaluarla. Dentro de un tiempo espero yo
+					no muy largo, debere incluir el parser para evitar errores espantosos
+					como los que pueden ocurrir en este momento.
+				</li>
+				<li>Ejemplo de expresiones que reconoce.</li>
+				<li>Uso de Funciones</li>
+			</ul>
+		</div>
+		<script>
+			new Control.Tabs("opmenu");
+		</script>
+		<div id="foot" align="center">
+			<p>Derechos Reservados ® lesthack 2007 :: <a href="http://code.inocorp.org/">code.inocorp.org</a></p>
+		</div>
+	</div>
+</body>
+</html>
+
+

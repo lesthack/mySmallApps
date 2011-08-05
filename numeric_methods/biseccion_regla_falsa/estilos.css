@@ -1,0 +1,122 @@
+body {
+	background-color:#EEE;
+	color:#111;
+	font-family:Arial,Helvetica,sans-serif,"Trebuchet MS";
+	width:100%;
+}
+a {text-decoration:none; color:#666;}
+a:hover{color:#999;}
+#root {
+	width:740px;
+	margin: 10px auto 0px auto;
+}
+#root h1{
+	font-size:140%;
+	color:#777;
+	letter-spacing:10px;
+}
+#root h1 b
+{
+	color:#444;
+}
+#root div.tab{
+	padding:10px 20px;
+	background:#DDD;
+	-moz-border-radius: 3px;
+	min-height:700px;
+}
+#root div.tab h1{
+	font-size:90%;
+}
+#root div.tab .texto{
+	text-align:justify;
+	padding-right:20px;
+}
+#root div.tab ul{
+	list-style-image:none;
+	list-style-position:outside;
+	list-style-type:none;
+	padding-bottom:3px;
+}
+#root div.tab ul li{
+	padding-bottom:5px;
+	padding-top:5px;
+}
+#root div.tab .request table{
+	font-size:80%;
+	width:90%;
+	background:#ccc;
+	-moz-border-radius:5px;
+}
+#root div.tab .request table th{
+	background:#bbb;
+}
+#root div.tab .request table td{
+	background:#ddd;
+	text-align:center;
+}
+#root div.tab .request table td:hover{
+	background:#eee;
+}
+#root div.tab form{
+	font-size:90%;
+	text-transform:lowercase;
+}
+#root div.tab form label{
+	padding-right:5px;
+}
+#root div.tab form input{
+	border:1px solid #999;
+	background:#FFF;
+	-moz-border-radius:2px;
+	text-align:center;
+}
+#root div.tab form input.button{
+	margin:0px;
+}
+#root div.tab form input.button:hover{
+	background:#ccc;
+	border:1px solid #777;
+}
+#root div.tab form input.button:active{
+	background:#000;
+	color:#999;
+	border:1px solid #999;
+}
+#root #menu ul{
+	list-style-image:none;
+	list-style-position:outside;
+	list-style-type:none;
+	height:5%;
+}
+#root #menu ul li{
+	float:left;
+	margin-right:7px;
+	text-align:center;
+}
+#root #menu ul li a{
+	border:1px solid #bbb;
+	background-color:#bbb;
+	color:#444;
+	display:block;
+	padding:4px;
+	width:100px;
+	-moz-border-radius:5px 5px 0px 0px;
+}
+#root #menu ul li a:hover{
+	border:1px solid #666;
+	background:#aaa;
+	color:#333;
+}
+#root #menu ul li a:active{
+	background-color:#DDD;
+	color:#111;
+}
+#root #foot{
+	font-size:80%;
+	background:#ddd;
+	margin-top:10px;
+	padding:10px;
+	-moz-border-radius:5px;
+	color:#666;
+}

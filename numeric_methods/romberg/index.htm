@@ -1,0 +1,165 @@
+<html xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Code :: Inocorp</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link type="text/css" href="css/estilos.css" rel=stylesheet>
+	<script src="javascript/utils.js" type="text/javascript"></script>
+	<script src="javascript/prototype.js" type="text/javascript"></script>
+	<script src="javascript/control.tabs.2.0.1.js" type="text/javascript"></script>
+	<script src="javascript/evaluator.js" type="text/javascript"></script>
+	<script src="javascript/romberg.js" type="text/javascript"></script>
+</head>
+<body>
+	<div id="root">
+		<h1>.;:Metodos<b>Numericos:;.</b></h1>
+		<div id="romberg" class="tab">
+			<h1>metodo de Romberg</h1>
+			<form class="formulario">
+				<table>
+					<thead>
+						<tr>
+							<th></th>
+							<th>Integral</th>
+							<th>A</th>
+							<th>B</th>
+							<th></th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr valign="top">
+							<td>
+								<label for="funcion" class="funcion"><b>∫</b></label>
+							</td>
+							<td>
+								<input value="(EXP(x))/x" name="funcion" id="funcion" size="40" class="button" style="margin-top:5px;">
+							</td>
+							<td>
+								<input value="1" name="a" id="a" size="2" class="button" style="margin-top:5px;">
+							</td>
+							<td>
+								<input value="3" name="b" id="b" size="2" class="button" style="margin-top:5px;">
+							</td>
+							<td>
+								<input type="button" value="OK" name="ok" class="button" onClick="romberg(funcion.value,a.value,b.value);" style="margin-top:5px;">
+							</td>
+							<td width="50%" rowspan="5" valign="top" class="texto">
+								<br> Nota: Use x como variable.</br>
+								<br> Nota: "a" es el intervalo inferior </br>
+								<br> Nota: "b" es el intervalo superior </br>
+								<br> Nota: funciones aceptadas 
+									<ul>
+										<li>Seno: <span class="function">SEN</span>(x)</li>
+										<li>Coseno: <span class="function">COS</span>(x)</li>
+										<li>Tangente: <span class="function">TAN</span>(x)</li>
+										<li>Exponente: <span class="function">EXP</span>(x)</li>
+									</ul>
+								</br>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="5">
+								<div id="trapecio" name="trapecio" style="padding-top:10px;display:none">
+									Iteraciones por el metodo de Romberg basandose en el metodo del Trapecio
+									<table class="trapecio">
+										<tr>
+											<td>
+												<input value="" name="h1" id="h1" class="button" size="10" readonly></input>
+											</td>
+											<td>
+											</td>
+											<td>
+											</td>
+											<td>
+											</td>
+										</tr>
+										<tr>
+											<td>
+											</td>
+											<td>
+												<input value="" name="R1" id="R1" class="button" size="10" readonly></input>
+											</td>
+											<td>
+											</td>
+											<td>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<input value="" name="h2" id="h2" class="button" size="10" readonly></input>
+											</td>
+											<td>
+											</td>
+											<td>
+												<input value="" name="R4" id="R4" class="button" size="10" readonly></input>
+											</td>
+											<td>
+											</td>
+										</tr>
+										<tr>
+											<td>
+											</td>
+											<td>
+												<input value="" name="R2" id="R2" class="button" size="10" readonly></input>
+											</td>
+											<td>
+											</td>
+											<td>
+												<input value="" name="R6" id="R6" class="button" size="10" readonly></input>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<input value="" name="h3" id="h3" class="button" size="10" readonly></input>
+											</td>
+											<td>
+											</td>
+											<td>
+												<input value="" name="R5" id="R5" class="button" size="10" readonly></input>
+											</td>
+											<td>
+											</td>
+										</tr>
+										<tr>
+											<td>
+											</td>
+											<td>
+												<input value="" name="R3" id="R3" class="button" size="10" readonly></input>
+											</td>
+											<td>
+											</td>
+											<td>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<input value="" name="h4" id="h4" class="button" size="10" readonly></input>
+											</td>
+											<td>
+											</td>
+											<td>
+											</td>
+											<td>
+											</td>
+										</tr>
+									</table>
+									<div>
+										<label for="raiz">Aproximacion a la Raiz: </label>
+										<input value="" name="raiz" id="raiz" class="button" readonly / > 
+									</div>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</form>
+		</div>
+		<div class="pies" name="pies">
+			Derechos Reservados ® Lesthack :: code.inocorp.org
+		</div>
+	</div>
+</body>
+</html>
+
+
+

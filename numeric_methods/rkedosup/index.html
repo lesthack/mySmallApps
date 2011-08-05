@@ -1,0 +1,78 @@
+<html xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Code :: Inocorp</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="keywords" content="Método de Runge-Kutta,1900,C. Runge,Ecuación diferencial,M.
+W. Kutta" />
+	<link type="text/css" href="css/estilos.css" rel=stylesheet>
+	<script src="javascript/utils.js" type="text/javascript"></script>
+	<script src="javascript/prototype.js" type="text/javascript"></script>
+	<script src="javascript/control.tabs.2.0.1.js" type="text/javascript"></script>
+	<script src="javascript/evaluator.js" type="text/javascript"></script>
+	<script src="javascript/rk.js" type="text/javascript"></script>
+</head>
+<body>
+	<div id="root">
+		<h1>.;:Metodos<b>Numericos:;.</b></h1>
+		<div id="romberg" class="tab">
+			<h1>RK4 :: ED cuarto orden<a href="ayuda.html">[Teoria]</a></h1>
+			<form class="formulario">
+				<table style="padding-top:30px">
+					<tbody>
+						<tr>
+							<td>
+								<b>f(x,y)=</b>
+								<input name="f" id="f" value="(SEN(4*x))/x" />
+							</td>
+							<td>
+								<b>x<sub>0</sub>=</b>
+								<input name="x0" id="x0" value="1" size="5" />
+							</td>
+							<td>
+								<b>y<sub>0</sub>=</b>
+								<input name="y0" id="y0" value="0" size="5" />
+							</td>
+							<td>
+								<b>a=</b>
+								<input name="a" id="a" value="1" size="5" />
+							</td>
+							<td>
+								<b>b=</b>
+								<input name="b" id="b" value="100" size="5" />
+							</td>
+							<td>
+									<b>n=</b>
+								<input name="n" id="n" value="100" size="5" />
+							</td>
+							<td>
+								<input type="button" value="Evaluar"
+onclick="rk4(f.value, x0.value, y0.value, a.value, b.value, n.value);" class="button" />
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<div id="resp" name="resp" class="request" align="center">
+					<table id="rk4_table" name="rk4_table">
+						<thead>
+							<tr>
+								<th>x</th>
+								<th>k1</th>
+								<th>k2</th>
+								<th>k3</th>
+								<th>k4</th>
+								<th>y</th>
+							</tr>
+						</thead>
+					</table>
+				</div>
+			</form>
+		</div>
+		<div class="pies" name="pies">
+			Derechos Reservados ® Lesthack :: code.inocorp.org
+		</div>
+	</div>
+</body>
+</html>
+
+
+
