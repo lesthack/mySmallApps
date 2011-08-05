@@ -1,0 +1,171 @@
+<html xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Code :: Inocorp</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link type="text/css" href="css/estilos.css" rel=stylesheet>
+	<script src="javascript/utils.js" type="text/javascript"></script>
+	<script src="javascript/prototype.js" type="text/javascript"></script>
+	<script src="javascript/control.tabs.2.0.1.js" type="text/javascript"></script>
+	<script src="javascript/stylehome.js" type="text/javascript"></script>
+</head>
+<body>
+	<div id="root">
+		<h1>.::Style<b>Home</b>::.</h1>
+		<div id="micasa" class="tab">
+			<h1>Editor de Estilos para mi casa</h1>
+			<table cellpadding="5px">
+				<tr>
+					<td width="62%">
+						<div id="casa">
+							<table id="barda[0]" class="barda" width="100%" cellspacing="0px" >
+								<thead>
+									<tr height="80px">
+										<th width="20px"></th>
+										<th></th>
+										<th width="20px"></th>
+										<th width="160px"></td>
+										<th width="20px"></th>
+										<th></th>
+										<th width="20px"></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr height="100px">
+										<td></td>
+										<td id="window"></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td id="window"></td>
+										<td></td>
+									</tr>
+									<tr height="100px">
+										<td colspan="7"></td>
+									</tr>
+									<tr height="100px">
+										<td></td>
+										<td id="window"></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td id="window"></td>
+										<td></td>
+									</tr>
+									<tr height="10px">
+										<td colspan="3"></td>
+										<td id="puerta"></td>
+										<td colspan="3"></td>
+									</tr>
+									<tr height="20px">
+										<td colspan="3" id="boludo[0]" class="boludo"></td>
+										<td id="puerta"></td>
+										<td colspan="3" id="boludo[1]" class="boludo"></td>
+									</tr>
+									<tr height="10px">
+										<td colspan="3"></td>
+										<td id="puerta"></td>
+										<td colspan="3"></td>
+									</tr>
+									<tr height="150px">
+										<td colspan="3" id="boludo[2]" class="boludo"></td>
+										<td id="puerta"></td>
+										<td colspan="3" id="boludo[3]" class="boludo"></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</td>
+					<td valign="top">
+						<form id="casa_propiedades">
+							<div class="texto">
+								El uso de este software es relativamente sencillo, la parte izquierda simula la perspectiva de
+								frente de la casa, donde hay cuatro ventanas y una puerta. Ahora, la parte derecha contiene dos
+								divisiones, una que es especificamente para la barda en general de la casa, y la otra para unicamente
+								la parte borduda de este enjarre. Contiene tambien tres entradas para cada division, para los tres
+								colores principales del RGB (RVA en español) los cuales podrán realizar las convinasiones necesarias
+								de los 1.6581375x10<sup>7</sup> colores disponibles.
+							</div>
+							<label for="increment">
+								<b>Incremento</b>
+							</label>
+							<input type="text" value="1" size="2" id="increment" />
+							<table cellpadding="2px">
+								<thead>
+									<tr>
+										<th>Barda</th>
+										<th>Boludo</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr align="right">
+										<td>
+											<label for="barda_rojo">
+												Rojo
+											</label>
+											<input id="barda_rojo" type="text" size=10 value="0" onChange="cambia('barda',1,'barda_rojo','barda_verde','barda_azul');" />
+											<input id="barda_back_rojo" type="button" value="<" onMouseDown="menos('barda_rojo');cambia('barda',1,'barda_rojo','barda_verde','barda_azul');" />
+											<input id="barda_next_rojo" type="button" value=">" onMouseDown="mas('barda_rojo');cambia('barda',1,'barda_rojo','barda_verde','barda_azul');" />
+										</td>
+										<td>
+											<label for="boludo_rojo">
+												Rojo
+											</label>
+											<input id="boludo_rojo" type="text" size=10 value="0" onChange="cambia('boludo',4,'boludo_rojo','boludo_verde','boludo_azul');" />
+											<input id="boludo_back_rojo" type="button" value="<" onMouseDown="menos('boludo_rojo');cambia('boludo',4,'boludo_rojo','boludo_verde','boludo_azul');" />
+											<input id="boludo_next_rojo" type="button" value=">" onMouseDown="mas('boludo_rojo');cambia('boludo',4,'boludo_rojo','boludo_verde','boludo_azul');" />
+										</td>
+									</tr>
+									<tr align="right">
+										<td>
+											<label for="barda_verde">
+												Verde
+											</label>
+											<input id="barda_verde" type="text" size=10 value="0" onChange="cambia('barda',1,'barda_rojo','barda_verde','barda_azul');" />
+											<input id="barda_back_verde" type="button" value="<" onMouseDown="menos('barda_verde');cambia('barda',1,'barda_rojo','barda_verde','barda_azul');" />
+											<input id="barda_next_verde" type="button" value=">" onMouseDown="mas('barda_verde');cambia('barda',1,'barda_rojo','barda_verde','barda_azul');" />
+										</td>
+										<td>
+											<label for="boludo_verde">
+												Verde
+											</label>
+											<input id="boludo_verde" type="text" size=10 value="0" onChange="cambia('boludo',4,'boludo_rojo','boludo_verde','boludo_azul');" />
+											<input id="boludo_back_verde" type="button" value="<" onMouseDown="menos('boludo_verde');cambia('boludo',4,'boludo_rojo','boludo_verde','boludo_azul');" />
+											<input id="boludo_next_verde" type="button" value=">" onMouseDown="mas('boludo_verde');cambia('boludo',4,'boludo_rojo','boludo_verde','boludo_azul');" />
+										</td>
+									</tr>
+									<tr align="right">
+										<td>
+											<label for="barda_azul">
+												Azul
+											</label>
+											<input id="barda_azul" type="text" size=10 value="0" onChange="cambia('barda',1,'barda_rojo','barda_verde','barda_azul');" />
+											<input id="barda_back_azul" type="button" value="<" onMouseDown="menos('barda_azul');cambia('barda',1,'barda_rojo','barda_verde','barda_azul');" />
+											<input id="barda_next_azul" type="button" value=">" onMouseDown="mas('barda_azul');cambia('barda',1,'barda_rojo','barda_verde','barda_azul');" />
+										</td>
+										<td>
+											<label for="boludo_azul">
+												Azul
+											</label>
+											<input id="boludo_azul" type="text" size=10 value="0" onChange="cambia('boludo',4,'boludo_rojo','boludo_verde','boludo_azul');" />
+											<input id="boludo_back_azul" type="button" value="<" onMouseDown="menos('boludo_azul');cambia('boludo',4,'boludo_rojo','boludo_verde','boludo_azul');" />
+											<input id="boludo_next_azul" type="button" value=">" onMouseDown="mas('boludo_azul');cambia('boludo',4,'boludo_rojo','boludo_verde','boludo_azul');" />
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						<form>
+					</td>
+				</tr>
+			</table>
+
+
+		</div>
+		<div class="pies" name="pies">
+			Derechos Reservados ® Lesthack :: code.inocorp.org
+		</div>
+	</div>
+</body>
+</html>
+
+
+
