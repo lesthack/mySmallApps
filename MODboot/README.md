@@ -1,6 +1,6 @@
 # MODBoot
 
-> Nota: ModBoot es un proyecto universitario que desarrollé en el 2006. Recupere los ficheros y decidí subirlo a un repo. Si ha alguien le sirve, mejor. Si encuentras errores en el, por favor, crea un issue.
+> Nota: ModBoot es un proyecto universitario que desarrollé en el 2006. Recupere los ficheros y decidí subirlo a un repo. La idea detrás del proyecto fue generar un sector de arranque programado completamente en [assambly](http://en.wikipedia.org/wiki/Assembly_language). Es probable que encuentres errores tanto técnicos como gramaticales ya que solo copie y pegue. 
 
 El proyecto MOD Boot Disquete consiste en un disquete con la estructura necesaria (archivos programados en ensamblador) para arrancar a una maquina con un procesador de la familia 80x86.
 
