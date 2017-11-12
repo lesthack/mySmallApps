@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteRule ^rgg http://sisinfo.itc.mx/ITC-APIRGG/Avisos/consultar_avisos.php [P]
+RewriteRule ^avisoId http://sisinfo.itc.mx/ITC-APIRGG/Avisos/frmto_aviso.php [P]
