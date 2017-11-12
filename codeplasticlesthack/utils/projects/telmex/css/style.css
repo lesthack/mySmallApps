@@ -1,0 +1,249 @@
+html, body {
+	width:99%;
+	background:#999;
+	color:#666;
+	font-family:Arial,Helvetica,sans-serif,"Trebuchet MS";
+	font-size:12px;
+	text-align:center;
+}
+a{text-decoration:none;}
+#root {
+	width: 800px;
+	height:95%;
+	margin: auto;
+	text-align:left;
+}
+#root #header{
+	margin:0px;
+	padding:0px;
+	height:25px;
+}
+#root #header .menu{
+	font-size:11px;
+	text-align:left; 
+	margin:8px 0 4px 10px;
+	padding:0 0 3px 0;
+	width:100%;
+}
+#root #header .menu a{
+	color:#666;
+	font-weight:bold;
+	cursor:default;
+}
+#root #header .menu li{
+	margin:0 2px 0 0;
+	border-bottom:none;
+	display: inline; 
+}
+#root #header .menu li a.no{
+	margin:0 -2px 0 0;
+	padding:3px 12px 3px 12px;
+	color:#666;
+	text-decoration:none;
+	border:1px solid #ccc;
+	background:#f5f5f5;
+}
+#root #header .menu li a.no:hover{
+	background: #ededed;
+	color: #000;
+}
+#root #header .menu li.active{
+	margin:0 3px 0 0;
+	padding:3px 6px 3px 8px; 
+	background:white;
+	border:1px solid #ccc;
+	border-bottom:1px solid #fff;
+}
+#root #header .menu li a.no:hover{
+	background:#ededed;
+	color:#000;
+}
+#root #header .menu .submenu{
+	float:left;
+	text-align:left; 
+	width:100%;
+	margin:8px 0 5px 0;
+	padding:3px 0 3px 0;
+}
+#root #header html .menu .submenu{
+	margin:2px 0 5px 0; 
+}
+#root #header .menu .submenu li a{
+	padding:3px 4px;
+	border:1px solid #bbb;
+	border-bottom:none;
+	border-top:none;
+}
+#root #header .menu .submenu li a.si{
+	background:#fff;
+}
+
+#root #header .menu .submenu li a.no{
+	border:0;
+	background:#eee;
+	color:#666;
+	border:1px solid #ddd;
+}
+#root #header .menu .submenu li a.no:hover{
+	background:#ccc;
+}
+#root #header .menu .submenu li.subActive{
+	padding:3px 6px 3px 8px;
+	font-weight:bold;
+	background:#fff;
+}
+#root #header #menu{
+	float:left;
+	width:659px;
+}
+
+#root #header #bwin{
+	float:left;
+}
+
+#root #bodier{
+	height:480px;
+	background:#fff;
+	padding:25px 10px 5px 10px;
+	background:#fff url(images/bg.png) center no-repeat;
+}
+#root #bodier #content{
+	border:1px solid #ccc;
+	-moz-border-radius:5px;
+	height:420px;
+	width:760px;
+	padding:10px;
+	margin-top:10px;
+	overflow:auto;
+}
+#root #bodier #content form{
+	border:1px solid #999;
+	-moz-border-radius:5px;
+}
+#root #bodier #content form label{
+	font-size:11px;
+	text-align:right;
+}
+#root #bodier #content form label span{
+	color:#FF9900;
+	font-weight:bold;
+}
+#root #bodier #content form label.acotacion{
+	color:red;
+	font-size:11px;
+	text-align:left;
+	margin-left:10px;
+}
+#root #bodier #content form label.vacio{
+	color:red;
+	font-weight:bold;
+}
+#root #bodier #content form .subform{
+	padding:10px;
+}
+#root #bodier #content form h1.titulo{
+	font-size:20px;
+	background:#ddf;
+	padding:3px;
+	padding-left:10px;
+	margin:0px;
+	border-bottom:1px solid #999;
+}
+#root #bodier #content form input,select{
+	border:1px solid #999;
+	font-size:11px;
+	background:#fff;
+	color:#000;
+}
+#root #bodier #content form input.disable,select.disable {
+	background:#eee;
+}
+#root #bodier #content form .botones{
+	text-align:right;
+}
+#root #bodier #content .hresult{
+	height:300px;
+	overflow:auto;
+}
+#root #bodier #content table.result{
+	font-size:11px;
+	cursor:default;
+	background:#fff;
+	border:1px solid #999;
+}
+#root #bodier #content table.result thead tr{
+	background:#408050;
+	color:#CFE6E6;
+}
+#root #bodier #content table.result thead th{
+	margin:0px;
+}
+#root #bodier #content table.result tbody{
+	text-align:center;
+}
+#root #bodier #content table.result tbody tr.one{
+	background:#FAFADB;
+}
+#root #bodier #content table.result tbody tr.select{ 
+	background:#bbb;
+}
+#root #bodier #content table.result tbody tr:hover{
+	background:#dee;
+}
+#root #bodier #messages{
+	margin-top:3px;
+	border:1px solid #ccc;
+	padding-top:5px;
+	height:20px;
+	color:red;
+	text-align:center;
+	overflow:auto;
+}
+#root #footer{
+	padding:4px;
+	text-align:center;
+	background:#eee;
+	color:#333;
+}
+#root #footer span{
+	
+}
+#root .hide{
+	display:none;
+}
+.shadow{
+	z-index:100;
+   	position: absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background: #000;
+   filter:alpha(opacity=60);
+   -moz-opacity: 0.6;
+   opacity: 0.6;
+}
+#login{
+	z-index:101;
+	width:30%;
+	height:30%;
+	background:#00CCFF;
+	background-image:url(images/body_bg.jpg);
+	position:absolute;
+	top:30%;
+	left:35%;
+	border:2px solid #aaa;
+}
+#login form{
+	padding-top:50px;
+	padding-left:50px;
+}
+#login form table{
+	color:#fff;
+	font-weight:bold;
+}
+#login form input{
+	border:1px solid #999;
+	padding:2px;
+}
+
