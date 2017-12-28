@@ -1,0 +1,214 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+body {
+	background:#272727;
+	color:#999;
+	font-family:Arial,Helvetica,Verdana,sans-serif;
+	font-size:12px;
+	font-style:normal;
+	font-variant:normal;
+}
+#root {
+	font-style:normal;
+	font-variant:normal;
+}
+
+div#header{
+	background:#1F1F1F;
+	border-bottom:1px solid #333;
+	text-align:left;
+	font-size:11px;
+	height:60px;
+	padding-right:200px;
+}
+div#header #menu{
+	display:inline;
+	float:right;
+}
+div#header #menu ul{
+	list-style-image:none;
+	list-style-position:outside;
+	list-style-type:none;
+}
+div#header #menu li{
+	float:left;	
+}
+div#header #menu a{
+	border-bottom:medium none;
+	color:#A6A6A6;
+	display:block;
+	float:left;
+	padding:25px 12px 23px;
+	text-decoration:none;
+}
+div#header #menu ul .active a {
+	background:#272727 none repeat scroll 0% 0%;
+	color:#53B9D7;
+	font-weight:bold;
+}
+div#header #menu a:focus {
+	outline-style:none;
+}
+div#bodier{
+	width:750px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:30px;
+	margin-bottom:20px;
+	height:600px;
+	overflow:auto;
+}
+div#bodier .tab{
+
+}
+div#bodier .tab h1{
+	letter-spacing:2px;
+	border-bottom:1px solid #2E2E2E;
+	color:#53B9D7;
+	text-decoration:none;
+}
+div#bodier .tab p{
+	text-align:justify;
+	margin-top:10px;
+}
+div#bodier .tab h2{
+	padding:1px;
+	background:#232323;
+}
+div#bodier .tab .operation{
+	background:#252525;
+	padding:10px;
+	float:left;
+	width:45%;
+	height:300px;
+}
+div#bodier .tab .result{
+	background:#252525;
+	width:49.5%;
+	height:300px;
+	padding:10px;
+	float:left;
+}
+div#bodier .tab .result h3{
+	font-size:12px;
+	font-weight:normal;
+}
+div#bodier .tab .result h3 span{
+	color:#377;
+	font-weight:bold;
+}
+div#bodier .tab .result h3 span a{
+	color:#377;
+}
+div#footer{
+	width:750px;
+	margin-left:auto;
+	margin-right:auto;
+	padding:10px;
+	border:1px solid #333;
+	text-align:center;
+	font-family:courier;
+	color:#555;
+}
+.hide{
+	display:none;
+}
+form{
+	margin:30px 10px 30px 10px;
+}
+form label{
+	font-weight:bold;
+	color:#FF8C00;
+	margin:0px 5px 0px 5px;
+}
+form input{
+	border:1px solid #999;
+	-moz-border-radius:5px;
+	text-align:center;
+	padding:1px;
+	min-width:100px;
+	margin-right:10px;
+}
+form input:hover{
+	background:#ccc;
+}
+form input:active{
+	background:#bbb;
+}
+form input.puzzle{
+	min-width:50px;
+	margin:2px;
+	cursor:default;
+}
+form input.puzzle:hover{
+	border:1px solid #969;
+}
+form input.zero{
+	background:#cdc;
+	border:1px solid #699;
+}
+table#chess{
+	background:#111;
+}
+table#chess td{
+	border:1px solid #333;
+	width:31px;
+	height:31px;
+}
+table#chess td.nothing{
+	border:0px;
+	text-align:center;
+	background:#252525;
+	font-weight:bold;
+}
+table#chess td.queen{
+	background:url(images/queen.png) no-repeat center;
+}
+table#puzzle{
+	background:#fff;
+	-moz-border-radius:4px;
+	font-size:50px;
+	text-align:center;
+	cursor:default;
+}
+table#puzzle td{
+	border:1px solid #bbb;
+	width:100px;
+	height:100px;
+}
+table#puzzle td.zero{
+	background:#ebe;
+}
+table#puzzle td:hover{
+	background:#eee;
+}
+table#puzzle td:active{
+	background:#eff;
+}
+.edo_puzzle{
+	width:325px;
+	text-align:center;
+	margin-bottom:10px;
+}
+#puzzle h4{
+	margin:2px;
+	text-transform:lowercase;
+	letter-spacing:2px;
+}
+.center{
+	text-align:center;
+}
+.shadow{
+	z-index:100;
+   	position: absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:150%;
+	background: #000;
+	filter:alpha(opacity=60);
+	-moz-opacity: 0.6;
+	opacity: 0.6;
+}
